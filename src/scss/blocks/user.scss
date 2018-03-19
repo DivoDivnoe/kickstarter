@@ -67,7 +67,7 @@
   font-weight: 600;
   color: #3a3f49;
 
-  &:hover {
+  &--active {
     color: $blue;
   }
 }
@@ -80,11 +80,19 @@
   font-family: inherit;
   color: #3a3f49;
   border: none;
+  font-size: 14px;
 
-  &::-webkit-input-placeholder,
-  &::-moz-placeholder,
+  &::-webkit-input-placeholder {
+    color: #8b98ab;
+    text-overflow: ellipsis;
+  }
+  &::-moz-placeholder {
+    color: #8b98ab;
+    text-overflow: ellipsis;
+  }
   &:-ms-input-placeholder {
     color: #8b98ab;
+    text-overflow: ellipsis;
   }
 }
 
@@ -173,8 +181,8 @@
   position: absolute;
   top: -9999px;
   left: 0;
+  width: 155px;
   padding: 10px 10px 10px 20px;
-  background-color: white;
   border-radius: 7px;
 }
 
