@@ -203,23 +203,25 @@ block content
             ul.main-nav__submenu.main-nav__submenu--cities
               each item in menu.cities.filter(item => !item.active)
                 li.main-nav__submenu-item
-                  a.main-nav__submenu-link(link=item.link) #{item.title}
+                  a.main-nav__submenu-link(href=item.link) #{item.title}
           each item in menu.menu
             li(class=`main-nav__item main-nav__item--${item.title}`)
-              a(class=`main-nav__link main-nav__link--${item.title}` link=!item.submenu && item.link) #{item.title}
+              a(class=`main-nav__link main-nav__link--${item.title}` href=!item.submenu && item.link) #{item.title}
               if item.submenu
                 ul(class=`main-nav__submenu main-nav__submenu--${item.title}`)
                   each subitem in item.submenu
                     li(class=`main-nav__submenu-item main-nav__submenu-item--${item.title}`)
-                      a(class=`main-nav__submenu-link main-nav__submenu-link--${item.title}` link=subitem.link) #{subitem.title}
+                      a(class=`main-nav__submenu-link main-nav__submenu-link--${item.title}` href=subitem.link) #{subitem.title}
       .header__user.user
         .user__search
           .user__search-block
             input.user__search-field(type="text" placeholder="Example: Cats exhibition")
             button.user__search-btn(disabled=true) Search
           button.user__search-toggle
+            span.visually-hidden search-toggle
         .user__bell
           button.user__bell-btn
+            span.visually-hidden notifications
         .user__controls
           .user__event
             button.user__event-btn Create Event
@@ -232,9 +234,9 @@ block content
             ul.user__submenu
               each item in userMenu.main
                 li.user__submenu-item.user__submenu-item--main
-                  a.user__submenu-link.user__submenu-link--main(link=item.link) #{item.title}
+                  a.user__submenu-link.user__submenu-link--main(href=item.link) #{item.title}
               li.user__submenu-item.user__submenu-item--logout
-                a.user__submenu-link.user__submenu-link--logout(link=userMenu.logout.link) #{userMenu.logout.title}
+                a.user__submenu-link.user__submenu-link--logout(href=userMenu.logout.link) #{userMenu.logout.title}
   section.banner
     .container.banner-wrapper
       h2.visually-hidden Promo block
@@ -251,7 +253,7 @@ block content
       ul.events__list
         each item in events
           li(class=`events__item ${item.doubleSize ? 'events__item--x2' : ''}` style=`background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${item.img})`)
-            a.events__item-link(link=item.link)
+            a.events__item-link(href=item.link)
               header.events__item-header
                 span.events__item-date #{item.date}
                 .events__item-extra
