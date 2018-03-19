@@ -1,4 +1,4 @@
-**Демо**: https://divodivnoe.github.io/test/build/
+**Демо**: https://divodivnoe.github.io/kickstarter/build/
 
 #### Как установить проект
 1. clone this repo
