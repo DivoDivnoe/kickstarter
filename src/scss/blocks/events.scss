@@ -6,10 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 75px;
+  padding-bottom: 44px;
 }
 
 .events__title {
   position: relative;
+  margin: 0;
   padding-right: 31px;
 
   &::after {

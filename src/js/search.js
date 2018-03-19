@@ -1,6 +1,6 @@
 const searchContainer = document.querySelector('.user__search');
 const nav = document.querySelector('.main-nav');
-const button = searchContainer.querySelector('.user__search-btn');
+const button = searchContainer.querySelector('.user__search-toggle');
 const field = searchContainer.querySelector('.user__search-field');
 const explore = nav.querySelector('.main-nav__item--explore');
 const categories = nav.querySelector('.main-nav__item--categories');

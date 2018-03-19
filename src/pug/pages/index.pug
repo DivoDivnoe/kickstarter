@@ -194,7 +194,8 @@ block content
   header.header
     .container.header-wrapper
       .header__logo.logo
-        img.header__logo-img(src="img/logo.png" alt="logo" width="121" height="31")
+        a.header__logo-link
+          img.header__logo-img(src="img/logo.png" alt="logo" width="121" height="31")
       nav.main-nav.header__nav
         ul.main-nav__list
           li.main-nav__item.main-nav__item--city
@@ -213,8 +214,10 @@ block content
                       a(class=`main-nav__submenu-link main-nav__submenu-link--${item.title}` link=subitem.link) #{subitem.title}
       .header__user.user
         .user__search
-          input.user__search-field(type="text" placeholder="Example: Cats exhibition")
-          button.user__search-btn
+          .user__search-block
+            input.user__search-field(type="text" placeholder="Example: Cats exhibition")
+            button.user__search-btn Search
+          button.user__search-toggle
         .user__bell
           button.user__bell-btn
         .user__controls
@@ -247,7 +250,7 @@ block content
         a.events__more More
       ul.events__list
         each item in events
-          li(class=`events__item ${item.doubleSize ? 'events__item--x2' : ''}` style=`background-image: url(${item.img})`)
+          li(class=`events__item ${item.doubleSize ? 'events__item--x2' : ''}` style=`background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${item.img})`)
             a.events__item-link(link=item.link)
               header.events__item-header
                 span.events__item-date #{item.date}

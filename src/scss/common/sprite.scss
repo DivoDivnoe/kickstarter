@@ -19,7 +19,7 @@ $arrow-icon-height: 5px;
 $arrow-icon-total-width: 22px;
 $arrow-icon-total-height: 165px;
 $arrow-icon-image: '../img/sprite.png';
-$arrow-icon: (0px, 0px, 0px, 0px, 9px, 5px, 22px, 165px, '../img/sprite.png', 'arrow-icon', );
+$arrow-icon: (0px, 0px, 0px, 0px, 9px, 5px, 22px, 165px, '../img/sprite.png', 'arrow-icon');
 $bell-icon-hover-name: 'bell-icon-hover';
 $bell-icon-hover-x: 0px;
 $bell-icon-hover-y: 63px;
@@ -30,7 +30,18 @@ $bell-icon-hover-height: 18px;
 $bell-icon-hover-total-width: 22px;
 $bell-icon-hover-total-height: 165px;
 $bell-icon-hover-image: '../img/sprite.png';
-$bell-icon-hover: (0px, 63px, 0px, -63px, 18px, 18px, 22px, 165px, '../img/sprite.png', 'bell-icon-hover', );
+$bell-icon-hover: (
+  0px,
+  63px,
+  0px,
+  -63px,
+  18px,
+  18px,
+  22px,
+  165px,
+  '../img/sprite.png',
+  'bell-icon-hover'
+);
 $bell-icon-name: 'bell-icon';
 $bell-icon-x: 0px;
 $bell-icon-y: 81px;
@@ -41,7 +52,7 @@ $bell-icon-height: 18px;
 $bell-icon-total-width: 22px;
 $bell-icon-total-height: 165px;
 $bell-icon-image: '../img/sprite.png';
-$bell-icon: (0px, 81px, 0px, -81px, 18px, 18px, 22px, 165px, '../img/sprite.png', 'bell-icon', );
+$bell-icon: (0px, 81px, 0px, -81px, 18px, 18px, 22px, 165px, '../img/sprite.png', 'bell-icon');
 $coin-icon-name: 'coin-icon';
 $coin-icon-x: 0px;
 $coin-icon-y: 99px;
@@ -52,7 +63,7 @@ $coin-icon-height: 19px;
 $coin-icon-total-width: 22px;
 $coin-icon-total-height: 165px;
 $coin-icon-image: '../img/sprite.png';
-$coin-icon: (0px, 99px, 0px, -99px, 19px, 19px, 22px, 165px, '../img/sprite.png', 'coin-icon', );
+$coin-icon: (0px, 99px, 0px, -99px, 19px, 19px, 22px, 165px, '../img/sprite.png', 'coin-icon');
 $fire-icon-name: 'fire-icon';
 $fire-icon-x: 0px;
 $fire-icon-y: 138px;
@@ -63,7 +74,7 @@ $fire-icon-height: 27px;
 $fire-icon-total-width: 22px;
 $fire-icon-total-height: 165px;
 $fire-icon-image: '../img/sprite.png';
-$fire-icon: (0px, 138px, 0px, -138px, 21px, 27px, 22px, 165px, '../img/sprite.png', 'fire-icon', );
+$fire-icon: (0px, 138px, 0px, -138px, 21px, 27px, 22px, 165px, '../img/sprite.png', 'fire-icon');
 $heart-icon-name: 'heart-icon';
 $heart-icon-x: 0px;
 $heart-icon-y: 19px;
@@ -74,7 +85,7 @@ $heart-icon-height: 12px;
 $heart-icon-total-width: 22px;
 $heart-icon-total-height: 165px;
 $heart-icon-image: '../img/sprite.png';
-$heart-icon: (0px, 19px, 0px, -19px, 14px, 12px, 22px, 165px, '../img/sprite.png', 'heart-icon', );
+$heart-icon: (0px, 19px, 0px, -19px, 14px, 12px, 22px, 165px, '../img/sprite.png', 'heart-icon');
 $more-icon-hover-name: 'more-icon-hover';
 $more-icon-hover-x: 0px;
 $more-icon-hover-y: 12px;
@@ -85,7 +96,18 @@ $more-icon-hover-height: 7px;
 $more-icon-hover-total-width: 22px;
 $more-icon-hover-total-height: 165px;
 $more-icon-hover-image: '../img/sprite.png';
-$more-icon-hover: (0px, 12px, 0px, -12px, 22px, 7px, 22px, 165px, '../img/sprite.png', 'more-icon-hover', );
+$more-icon-hover: (
+  0px,
+  12px,
+  0px,
+  -12px,
+  22px,
+  7px,
+  22px,
+  165px,
+  '../img/sprite.png',
+  'more-icon-hover'
+);
 $more-icon-name: 'more-icon';
 $more-icon-x: 0px;
 $more-icon-y: 5px;
@@ -96,7 +118,7 @@ $more-icon-height: 7px;
 $more-icon-total-width: 22px;
 $more-icon-total-height: 165px;
 $more-icon-image: '../img/sprite.png';
-$more-icon: (0px, 5px, 0px, -5px, 22px, 7px, 22px, 165px, '../img/sprite.png', 'more-icon', );
+$more-icon: (0px, 5px, 0px, -5px, 22px, 7px, 22px, 165px, '../img/sprite.png', 'more-icon');
 $placemark-icon-name: 'placemark-icon';
 $placemark-icon-x: 0px;
 $placemark-icon-y: 118px;
@@ -107,7 +129,18 @@ $placemark-icon-height: 20px;
 $placemark-icon-total-width: 22px;
 $placemark-icon-total-height: 165px;
 $placemark-icon-image: '../img/sprite.png';
-$placemark-icon: (0px, 118px, 0px, -118px, 16px, 20px, 22px, 165px, '../img/sprite.png', 'placemark-icon', );
+$placemark-icon: (
+  0px,
+  118px,
+  0px,
+  -118px,
+  16px,
+  20px,
+  22px,
+  165px,
+  '../img/sprite.png',
+  'placemark-icon'
+);
 $search-icon-hover-name: 'search-icon-hover';
 $search-icon-hover-x: 0px;
 $search-icon-hover-y: 31px;
@@ -118,7 +151,18 @@ $search-icon-hover-height: 16px;
 $search-icon-hover-total-width: 22px;
 $search-icon-hover-total-height: 165px;
 $search-icon-hover-image: '../img/sprite.png';
-$search-icon-hover: (0px, 31px, 0px, -31px, 16px, 16px, 22px, 165px, '../img/sprite.png', 'search-icon-hover', );
+$search-icon-hover: (
+  0px,
+  31px,
+  0px,
+  -31px,
+  16px,
+  16px,
+  22px,
+  165px,
+  '../img/sprite.png',
+  'search-icon-hover'
+);
 $search-icon-name: 'search-icon';
 $search-icon-x: 0px;
 $search-icon-y: 47px;
@@ -129,12 +173,24 @@ $search-icon-height: 16px;
 $search-icon-total-width: 22px;
 $search-icon-total-height: 165px;
 $search-icon-image: '../img/sprite.png';
-$search-icon: (0px, 47px, 0px, -47px, 16px, 16px, 22px, 165px, '../img/sprite.png', 'search-icon', );
+$search-icon: (0px, 47px, 0px, -47px, 16px, 16px, 22px, 165px, '../img/sprite.png', 'search-icon');
 $spritesheet-width: 22px;
 $spritesheet-height: 165px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($arrow-icon, $bell-icon-hover, $bell-icon, $coin-icon, $fire-icon, $heart-icon, $more-icon-hover, $more-icon, $placemark-icon, $search-icon-hover, $search-icon, );
-$spritesheet: (22px, 165px, '../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: (
+  $arrow-icon,
+  $bell-icon-hover,
+  $bell-icon,
+  $coin-icon,
+  $fire-icon,
+  $heart-icon,
+  $more-icon-hover,
+  $more-icon,
+  $placemark-icon,
+  $search-icon-hover,
+  $search-icon
+);
+$spritesheet: (22px, 165px, '../img/sprite.png', $spritesheet-sprites);
 
 // The provided mixins are intended to be used with the array-like variables
 //
@@ -171,7 +227,7 @@ $spritesheet: (22px, 165px, '../img/sprite.png', $spritesheet-sprites, );
 @mixin sprite-position($sprite) {
   $sprite-offset-x: nth($sprite, 3);
   $sprite-offset-y: nth($sprite, 4);
-  background-position: $sprite-offset-x  $sprite-offset-y;
+  background-position: $sprite-offset-x $sprite-offset-y;
 }
 
 @mixin sprite-image($sprite) {

@@ -97,7 +97,9 @@
   top: -9999px;
   left: 0;
   padding-top: 10px;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 7px;
 
   &--categories {
     display: flex;

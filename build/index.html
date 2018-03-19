@@ -11,7 +11,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header-wrapper">
-          <div class="header__logo logo"><img class="header__logo-img" src="img/logo.png" alt="logo" width="121" height="31"/></div>
+          <div class="header__logo logo"><a class="header__logo-link"><img class="header__logo-img" src="img/logo.png" alt="logo" width="121" height="31"/></a></div>
           <nav class="main-nav header__nav">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--city"><a class="main-nav__link main-nav__link--city">Houston</a>
@@ -45,8 +45,11 @@
           </nav>
           <div class="header__user user">
             <div class="user__search">
-              <input class="user__search-field" type="text" placeholder="Example: Cats exhibition"/>
-              <button class="user__search-btn"></button>
+              <div class="user__search-block">
+                <input class="user__search-field" type="text" placeholder="Example: Cats exhibition"/>
+                <button class="user__search-btn">Search</button>
+              </div>
+              <button class="user__search-toggle"></button>
             </div>
             <div class="user__bell">
               <button class="user__bell-btn"></button>
@@ -87,7 +90,7 @@
             <h2 class="events__title">Trending events</h2><a class="events__more">More</a>
           </div>
           <ul class="events__list">
-            <li class="events__item " style="background-image: url(img/boys.jpg)"><a class="events__item-link" link="#">
+            <li class="events__item " style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/boys.jpg)"><a class="events__item-link" link="#">
                 <header class="events__item-header"><span class="events__item-date">Feb, 15</span>
                   <div class="events__item-extra">
                   </div>
@@ -98,7 +101,7 @@
                   <div class="events__item-categories">
                   </div>
                 </div></a></li>
-            <li class="events__item " style="background-image: url(img/budapest.jpg)"><a class="events__item-link" link="#">
+            <li class="events__item " style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/budapest.jpg)"><a class="events__item-link" link="#">
                 <header class="events__item-header"><span class="events__item-date">Feb, 13</span>
                   <div class="events__item-extra"><span class="events__item-coin"></span><span class="events__item-free">Free</span>
                   </div>
@@ -109,7 +112,7 @@
                   <div class="events__item-categories">
                   </div>
                 </div></a></li>
-            <li class="events__item events__item--x2" style="background-image: url(img/romeo.jpg)"><a class="events__item-link" link="#">
+            <li class="events__item events__item--x2" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/romeo.jpg)"><a class="events__item-link" link="#">
                 <header class="events__item-header"><span class="events__item-date">Apr, 24</span>
                   <div class="events__item-extra">
                   </div>
@@ -120,7 +123,7 @@
                   <div class="events__item-categories">
                   </div>
                 </div></a></li>
-            <li class="events__item " style="background-image: url(img/asap.jpg)"><a class="events__item-link" link="#">
+            <li class="events__item " style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/asap.jpg)"><a class="events__item-link" link="#">
                 <header class="events__item-header"><span class="events__item-date">Mar, 21</span>
                   <div class="events__item-extra">
                   </div>
@@ -131,7 +134,7 @@
                   <div class="events__item-categories"><span class="events__item-category">party</span><span class="events__item-category">concert</span>
                   </div>
                 </div></a></li>
-            <li class="events__item events__item--x2" style="background-image: url(img/rams.jpg)"><a class="events__item-link" link="#">
+            <li class="events__item events__item--x2" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/rams.jpg)"><a class="events__item-link" link="#">
                 <header class="events__item-header"><span class="events__item-date">Apr, 07</span>
                   <div class="events__item-extra"><span class="events__item-coin"></span>
                   </div>
@@ -142,7 +145,7 @@
                   <div class="events__item-categories">
                   </div>
                 </div></a></li>
-            <li class="events__item " style="background-image: url(img/bird.jpg)"><a class="events__item-link" link="#">
+            <li class="events__item " style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/bird.jpg)"><a class="events__item-link" link="#">
                 <header class="events__item-header"><span class="events__item-date">Mar, 13-25</span>
                   <div class="events__item-extra">
                   </div>
