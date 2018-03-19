@@ -1,0 +1,62 @@
+html,
+html::before,
+html::after {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 14px;
+  line-height: calc(23 / 14);
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  color: #3a3f49;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  line-height: 1.42;
+  font-family: inherit;
+  color: #8b98ab;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.wrapper {
+  min-width: 1200px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,42 @@
+.banner {
+  box-shadow: 0 0 9px 0 rgba(#cfdeea, 0.45);
+}
+
+.banner-wrapper {
+  padding: 190px 0 265px 0;
+  background: url('../img/illustration.png') right -50px no-repeat;
+}
+
+.banner__block {
+  width: 310px;
+  margin-left: 10%;
+}
+
+.banner__promo {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(43 / 36);
+}
+
+.banner__text {
+  margin-bottom: 40px;
+  color: #8b98ab;
+}
+
+.banner__start-btn {
+  padding: 17px 28px;
+  color: white;
+  background-color: $blue;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: lighten($blue, 5%);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 5px 0 rgba(black, 0.5);
+  }
+}

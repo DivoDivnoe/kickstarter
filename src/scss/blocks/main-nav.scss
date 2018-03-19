@@ -1,0 +1,126 @@
+.main-nav__list {
+  display: flex;
+  padding-left: 55px;
+  border-left: 1px solid $gray;
+}
+
+.main-nav__item {
+  position: relative;
+
+  &:hover {
+    .main-nav__submenu {
+      top: 100%;
+    }
+  }
+
+  &--city:hover {
+    .main-nav__link::after {
+      transform: rotate(-180deg) translateY(50%);
+    }
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding: 30px 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &:not(.main-nav__link--city) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: $blue;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &--active {
+    font-weight: 600;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &--categories {
+    width: 82px;
+  }
+
+  &--explore {
+    width: 65px;
+    margin-right: 35px;
+  }
+
+  &--city {
+    padding-left: 31px;
+    padding-right: 15px;
+    font-weight: 600;
+
+    &::before {
+      @include sprite($placemark-icon);
+
+      left: 0;
+      z-index: 100;
+    }
+
+    &::after {
+      @include sprite($arrow-icon);
+
+      right: 0;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s;
+    }
+  }
+}
+
+.main-nav__submenu {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  padding-top: 10px;
+  padding-bottom: 2px;
+
+  &--categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 198px;
+  }
+
+  &--cities {
+    padding-left: 25px;
+    width: 220px;
+  }
+}
+
+.main-nav__submenu-link {
+  display: block;
+  padding: 6px 5px;
+
+  &--categories {
+    width: 85px;
+  }
+
+  &:hover {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,267 @@
+extends ./_template
+
+block variables
+  -
+    var menu = {
+      cities: [
+        {
+          title: 'Houston',
+          link: '#',
+          active: true
+        },
+        {
+          title: 'Moscow',
+          link: '#',
+          active: false
+        },
+        {
+          title: 'Saint-Petersburg',
+          link: '#',
+          active: false
+        },
+        {
+          title: 'Helsinki',
+          link: '#',
+          active: false
+        },
+        {
+          title: 'Toronto',
+          link: '#',
+          active: false
+        },
+        {
+          title: 'Dubai',
+          link: '#',
+          active: false
+        }
+      ],
+      menu: [
+        {
+          title: 'categories',
+          submenu: [
+            {
+              title: 'Concerts',
+              link: '#'
+            },
+            {
+              title: 'Party',
+              link: '#'
+            },
+            {
+              title: 'Art',
+              link: '#'
+            },
+            {
+              title: 'Games',
+              link: '#'
+            },
+            {
+              title: 'Festivals',
+              link: '#'
+            },
+            {
+              title: 'Education',
+              link: '#'
+            },
+            {
+              title: 'Theatre',
+              link: '#'
+            },
+            {
+              title: 'Fashion',
+              link: '#'
+            },
+            {
+              title: 'Nightlife',
+              link: '#'
+            },
+            {
+              title: 'Sport',
+              link: '#'
+            },
+            {
+              title: 'Business',
+              link: '#'
+            },
+            {
+              title: 'Meetups',
+              link: '#'
+            }
+          ]
+        },
+        {
+          title: 'explore',
+          link: '#'
+        }
+      ]
+    };
+
+    var userMenu = {
+      main: [
+        {
+          title: 'My profile',
+          link: '#'
+        },
+        {
+          title: 'Organizer panel',
+          link: '#'
+        },
+        {
+          title: 'Buy KCY Tokens',
+          link: '#'
+        },
+        {
+          title: 'Settings',
+          link: '#'
+        }
+      ],
+      logout: {
+        title: 'Logout',
+        link: '#'
+      }
+    };
+
+    var events = [
+      {
+        title: 'New Politics @ House of Blues',
+        date: 'Feb, 15',
+        img: '../img/boys.jpg',
+        link: '#',
+        doubleSize: false,
+        free: false,
+        tokensForVisit: false,
+        favorite: false,
+        categories: []
+      },
+      {
+        title: 'Grand Budapest Hotel',
+        date: 'Feb, 13',
+        img: '../img/budapest.jpg',
+        link: '#',
+        doubleSize: false,
+        free: true,
+        tokensForVisit: true,
+        favorite: false,
+        categories: []
+      },
+      {
+        title: 'Romeo and Juliet',
+        date: 'Apr, 24',
+        img: '../img/romeo.jpg',
+        link: '#',
+        doubleSize: true,
+        free: false,
+        tokensForVisit: false,
+        favorite: false,
+        categories: []
+      },
+      {
+        title: 'A$AP ROCKY',
+        date: 'Mar, 21',
+        img: '../img/asap.jpg',
+        link: '#',
+        doubleSize: false,
+        free: false,
+        tokensForVisit: false,
+        favorite: true,
+        categories: ['party', 'concert']
+      },
+      {
+        title: 'Dieter Rams: Less is Better',
+        date: 'Apr, 07',
+        img: '../img/rams.jpg',
+        link: '#',
+        doubleSize: true,
+        free: false,
+        tokensForVisit: true,
+        favorite: false,
+        categories: []
+      },
+      {
+        title: 'Carel Fabritius',
+        date: 'Mar, 13-25',
+        img: '../img/bird.jpg',
+        link: '#',
+        doubleSize: false,
+        free: false,
+        tokensForVisit: false,
+        favorite: false,
+        categories: []
+      }
+    ];
+
+block content
+  header.header
+    .container.header-wrapper
+      .header__logo.logo
+        img.header__logo-img(src="img/logo.png" alt="logo" width="121" height="31")
+      nav.main-nav.header__nav
+        ul.main-nav__list
+          li.main-nav__item.main-nav__item--city
+            a.main-nav__link.main-nav__link--city #{menu.cities.find(item => item.active).title}
+            ul.main-nav__submenu.main-nav__submenu--cities
+              each item in menu.cities.filter(item => !item.active)
+                li.main-nav__submenu-item
+                  a.main-nav__submenu-link(link=item.link) #{item.title}
+          each item in menu.menu
+            li(class=`main-nav__item main-nav__item--${item.title}`)
+              a(class=`main-nav__link main-nav__link--${item.title}` link=!item.submenu && item.link) #{item.title}
+              if item.submenu
+                ul(class=`main-nav__submenu main-nav__submenu--${item.title}`)
+                  each subitem in item.submenu
+                    li(class=`main-nav__submenu-item main-nav__submenu-item--${item.title}`)
+                      a(class=`main-nav__submenu-link main-nav__submenu-link--${item.title}` link=subitem.link) #{subitem.title}
+      .header__user.user
+        .user__search
+          input.user__search-field(type="text" placeholder="Example: Cats exhibition")
+          button.user__search-btn
+        .user__bell
+          button.user__bell-btn
+        .user__controls
+          .user__event
+            button.user__event-btn Create Event
+          .user__score
+            p
+              span.user__score-acc 0.0027 
+              | KCY
+            .user__pic
+              img.user__img(src="img/avatar.jpg" alt="user avatar" width="65" height="62")
+            ul.user__submenu
+              each item in userMenu.main
+                li.user__submenu-item.user__submenu-item--main
+                  a.user__submenu-link.user__submenu-link--main(link=item.link) #{item.title}
+              li.user__submenu-item.user__submenu-item--logout
+                a.user__submenu-link.user__submenu-link--logout(link=userMenu.logout.link) #{userMenu.logout.title}
+  section.banner
+    .container.banner-wrapper
+      h2.visually-hidden Promo block
+      .banner__block
+        strong.banner__promo Get rewarded for enjoying life!
+        p.banner__text Earn crypto tokens by having fun with friends
+        .banner__start
+          button.banner__start-btn Get Started
+  section.events
+    .container
+      .events__title-wrapper
+        h2.events__title Trending events
+        a.events__more More
+      ul.events__list
+        each item in events
+          li(class=`events__item ${item.doubleSize ? 'events__item--x2' : ''}` style=`background-image: url(${item.img})`)
+            a.events__item-link(link=item.link)
+              header.events__item-header
+                span.events__item-date #{item.date}
+                .events__item-extra
+                  if item.tokensForVisit 
+                    span.events__item-coin
+                  if item.free 
+                    span.events__item-free Free
+              .events__item-bottom
+                h3.events__item-title #{item.title}
+                  if (item.favorite) 
+                    span.events__item-favorite
+                .events__item-categories
+                  if item.categories.length
+                    each category in item.categories
+                      span.events__item-category #{category}
+

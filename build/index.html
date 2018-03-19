@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>KickCity</title>
+    <link rel="stylesheet" href="css/style.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-wrapper">
+          <div class="header__logo logo"><img class="header__logo-img" src="img/logo.png" alt="logo" width="121" height="31"/></div>
+          <nav class="main-nav header__nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--city"><a class="main-nav__link main-nav__link--city">Houston</a>
+                <ul class="main-nav__submenu main-nav__submenu--cities">
+                  <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" link="#">Moscow</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" link="#">Saint-Petersburg</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" link="#">Helsinki</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" link="#">Toronto</a></li>
+                  <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" link="#">Dubai</a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__item--categories"><a class="main-nav__link main-nav__link--categories">categories</a>
+                <ul class="main-nav__submenu main-nav__submenu--categories">
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Concerts</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Party</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Art</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Games</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Festivals</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Education</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Theatre</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Fashion</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Nightlife</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Sport</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Business</a></li>
+                  <li class="main-nav__submenu-item main-nav__submenu-item--categories"><a class="main-nav__submenu-link main-nav__submenu-link--categories" link="#">Meetups</a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__item--explore"><a class="main-nav__link main-nav__link--explore" link="#">explore</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__user user">
+            <div class="user__search">
+              <input class="user__search-field" type="text" placeholder="Example: Cats exhibition"/>
+              <button class="user__search-btn"></button>
+            </div>
+            <div class="user__bell">
+              <button class="user__bell-btn"></button>
+            </div>
+            <div class="user__controls">
+              <div class="user__event">
+                <button class="user__event-btn">Create Event</button>
+              </div>
+              <div class="user__score">
+                <p><span class="user__score-acc">0.0027 </span>KCY</p>
+                <div class="user__pic"><img class="user__img" src="img/avatar.jpg" alt="user avatar" width="65" height="62"/></div>
+                <ul class="user__submenu">
+                  <li class="user__submenu-item user__submenu-item--main"><a class="user__submenu-link user__submenu-link--main" link="#">My profile</a></li>
+                  <li class="user__submenu-item user__submenu-item--main"><a class="user__submenu-link user__submenu-link--main" link="#">Organizer panel</a></li>
+                  <li class="user__submenu-item user__submenu-item--main"><a class="user__submenu-link user__submenu-link--main" link="#">Buy KCY Tokens</a></li>
+                  <li class="user__submenu-item user__submenu-item--main"><a class="user__submenu-link user__submenu-link--main" link="#">Settings</a></li>
+                  <li class="user__submenu-item user__submenu-item--logout"><a class="user__submenu-link user__submenu-link--logout" link="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="banner">
+        <div class="container banner-wrapper">
+          <h2 class="visually-hidden">Promo block</h2>
+          <div class="banner__block"><strong class="banner__promo">Get rewarded for enjoying life!</strong>
+            <p class="banner__text">Earn crypto tokens by having fun with friends</p>
+            <div class="banner__start">
+              <button class="banner__start-btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="events">
+        <div class="container">
+          <div class="events__title-wrapper">
+            <h2 class="events__title">Trending events</h2><a class="events__more">More</a>
+          </div>
+          <ul class="events__list">
+            <li class="events__item " style="background-image: url(../img/boys.jpg)"><a class="events__item-link" link="#">
+                <header class="events__item-header"><span class="events__item-date">Feb, 15</span>
+                  <div class="events__item-extra">
+                  </div>
+                </header>
+                <div class="events__item-bottom">
+                  <h3 class="events__item-title">New Politics @ House of Blues
+                  </h3>
+                  <div class="events__item-categories">
+                  </div>
+                </div></a></li>
+            <li class="events__item " style="background-image: url(../img/budapest.jpg)"><a class="events__item-link" link="#">
+                <header class="events__item-header"><span class="events__item-date">Feb, 13</span>
+                  <div class="events__item-extra"><span class="events__item-coin"></span><span class="events__item-free">Free</span>
+                  </div>
+                </header>
+                <div class="events__item-bottom">
+                  <h3 class="events__item-title">Grand Budapest Hotel
+                  </h3>
+                  <div class="events__item-categories">
+                  </div>
+                </div></a></li>
+            <li class="events__item events__item--x2" style="background-image: url(../img/romeo.jpg)"><a class="events__item-link" link="#">
+                <header class="events__item-header"><span class="events__item-date">Apr, 24</span>
+                  <div class="events__item-extra">
+                  </div>
+                </header>
+                <div class="events__item-bottom">
+                  <h3 class="events__item-title">Romeo and Juliet
+                  </h3>
+                  <div class="events__item-categories">
+                  </div>
+                </div></a></li>
+            <li class="events__item " style="background-image: url(../img/asap.jpg)"><a class="events__item-link" link="#">
+                <header class="events__item-header"><span class="events__item-date">Mar, 21</span>
+                  <div class="events__item-extra">
+                  </div>
+                </header>
+                <div class="events__item-bottom">
+                  <h3 class="events__item-title">A$AP ROCKY<span class="events__item-favorite"></span>
+                  </h3>
+                  <div class="events__item-categories"><span class="events__item-category">party</span><span class="events__item-category">concert</span>
+                  </div>
+                </div></a></li>
+            <li class="events__item events__item--x2" style="background-image: url(../img/rams.jpg)"><a class="events__item-link" link="#">
+                <header class="events__item-header"><span class="events__item-date">Apr, 07</span>
+                  <div class="events__item-extra"><span class="events__item-coin"></span>
+                  </div>
+                </header>
+                <div class="events__item-bottom">
+                  <h3 class="events__item-title">Dieter Rams: Less is Better
+                  </h3>
+                  <div class="events__item-categories">
+                  </div>
+                </div></a></li>
+            <li class="events__item " style="background-image: url(../img/bird.jpg)"><a class="events__item-link" link="#">
+                <header class="events__item-header"><span class="events__item-date">Mar, 13-25</span>
+                  <div class="events__item-extra">
+                  </div>
+                </header>
+                <div class="events__item-bottom">
+                  <h3 class="events__item-title">Carel Fabritius
+                  </h3>
+                  <div class="events__item-categories">
+                  </div>
+                </div></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

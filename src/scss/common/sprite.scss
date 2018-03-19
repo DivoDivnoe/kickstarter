@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arrow-icon-name: 'arrow-icon';
+$arrow-icon-x: 0px;
+$arrow-icon-y: 0px;
+$arrow-icon-offset-x: 0px;
+$arrow-icon-offset-y: 0px;
+$arrow-icon-width: 9px;
+$arrow-icon-height: 5px;
+$arrow-icon-total-width: 22px;
+$arrow-icon-total-height: 165px;
+$arrow-icon-image: '../img/sprite.png';
+$arrow-icon: (0px, 0px, 0px, 0px, 9px, 5px, 22px, 165px, '../img/sprite.png', 'arrow-icon', );
+$bell-icon-hover-name: 'bell-icon-hover';
+$bell-icon-hover-x: 0px;
+$bell-icon-hover-y: 63px;
+$bell-icon-hover-offset-x: 0px;
+$bell-icon-hover-offset-y: -63px;
+$bell-icon-hover-width: 18px;
+$bell-icon-hover-height: 18px;
+$bell-icon-hover-total-width: 22px;
+$bell-icon-hover-total-height: 165px;
+$bell-icon-hover-image: '../img/sprite.png';
+$bell-icon-hover: (0px, 63px, 0px, -63px, 18px, 18px, 22px, 165px, '../img/sprite.png', 'bell-icon-hover', );
+$bell-icon-name: 'bell-icon';
+$bell-icon-x: 0px;
+$bell-icon-y: 81px;
+$bell-icon-offset-x: 0px;
+$bell-icon-offset-y: -81px;
+$bell-icon-width: 18px;
+$bell-icon-height: 18px;
+$bell-icon-total-width: 22px;
+$bell-icon-total-height: 165px;
+$bell-icon-image: '../img/sprite.png';
+$bell-icon: (0px, 81px, 0px, -81px, 18px, 18px, 22px, 165px, '../img/sprite.png', 'bell-icon', );
+$coin-icon-name: 'coin-icon';
+$coin-icon-x: 0px;
+$coin-icon-y: 99px;
+$coin-icon-offset-x: 0px;
+$coin-icon-offset-y: -99px;
+$coin-icon-width: 19px;
+$coin-icon-height: 19px;
+$coin-icon-total-width: 22px;
+$coin-icon-total-height: 165px;
+$coin-icon-image: '../img/sprite.png';
+$coin-icon: (0px, 99px, 0px, -99px, 19px, 19px, 22px, 165px, '../img/sprite.png', 'coin-icon', );
+$fire-icon-name: 'fire-icon';
+$fire-icon-x: 0px;
+$fire-icon-y: 138px;
+$fire-icon-offset-x: 0px;
+$fire-icon-offset-y: -138px;
+$fire-icon-width: 21px;
+$fire-icon-height: 27px;
+$fire-icon-total-width: 22px;
+$fire-icon-total-height: 165px;
+$fire-icon-image: '../img/sprite.png';
+$fire-icon: (0px, 138px, 0px, -138px, 21px, 27px, 22px, 165px, '../img/sprite.png', 'fire-icon', );
+$heart-icon-name: 'heart-icon';
+$heart-icon-x: 0px;
+$heart-icon-y: 19px;
+$heart-icon-offset-x: 0px;
+$heart-icon-offset-y: -19px;
+$heart-icon-width: 14px;
+$heart-icon-height: 12px;
+$heart-icon-total-width: 22px;
+$heart-icon-total-height: 165px;
+$heart-icon-image: '../img/sprite.png';
+$heart-icon: (0px, 19px, 0px, -19px, 14px, 12px, 22px, 165px, '../img/sprite.png', 'heart-icon', );
+$more-icon-hover-name: 'more-icon-hover';
+$more-icon-hover-x: 0px;
+$more-icon-hover-y: 12px;
+$more-icon-hover-offset-x: 0px;
+$more-icon-hover-offset-y: -12px;
+$more-icon-hover-width: 22px;
+$more-icon-hover-height: 7px;
+$more-icon-hover-total-width: 22px;
+$more-icon-hover-total-height: 165px;
+$more-icon-hover-image: '../img/sprite.png';
+$more-icon-hover: (0px, 12px, 0px, -12px, 22px, 7px, 22px, 165px, '../img/sprite.png', 'more-icon-hover', );
+$more-icon-name: 'more-icon';
+$more-icon-x: 0px;
+$more-icon-y: 5px;
+$more-icon-offset-x: 0px;
+$more-icon-offset-y: -5px;
+$more-icon-width: 22px;
+$more-icon-height: 7px;
+$more-icon-total-width: 22px;
+$more-icon-total-height: 165px;
+$more-icon-image: '../img/sprite.png';
+$more-icon: (0px, 5px, 0px, -5px, 22px, 7px, 22px, 165px, '../img/sprite.png', 'more-icon', );
+$placemark-icon-name: 'placemark-icon';
+$placemark-icon-x: 0px;
+$placemark-icon-y: 118px;
+$placemark-icon-offset-x: 0px;
+$placemark-icon-offset-y: -118px;
+$placemark-icon-width: 16px;
+$placemark-icon-height: 20px;
+$placemark-icon-total-width: 22px;
+$placemark-icon-total-height: 165px;
+$placemark-icon-image: '../img/sprite.png';
+$placemark-icon: (0px, 118px, 0px, -118px, 16px, 20px, 22px, 165px, '../img/sprite.png', 'placemark-icon', );
+$search-icon-hover-name: 'search-icon-hover';
+$search-icon-hover-x: 0px;
+$search-icon-hover-y: 31px;
+$search-icon-hover-offset-x: 0px;
+$search-icon-hover-offset-y: -31px;
+$search-icon-hover-width: 16px;
+$search-icon-hover-height: 16px;
+$search-icon-hover-total-width: 22px;
+$search-icon-hover-total-height: 165px;
+$search-icon-hover-image: '../img/sprite.png';
+$search-icon-hover: (0px, 31px, 0px, -31px, 16px, 16px, 22px, 165px, '../img/sprite.png', 'search-icon-hover', );
+$search-icon-name: 'search-icon';
+$search-icon-x: 0px;
+$search-icon-y: 47px;
+$search-icon-offset-x: 0px;
+$search-icon-offset-y: -47px;
+$search-icon-width: 16px;
+$search-icon-height: 16px;
+$search-icon-total-width: 22px;
+$search-icon-total-height: 165px;
+$search-icon-image: '../img/sprite.png';
+$search-icon: (0px, 47px, 0px, -47px, 16px, 16px, 22px, 165px, '../img/sprite.png', 'search-icon', );
+$spritesheet-width: 22px;
+$spritesheet-height: 165px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($arrow-icon, $bell-icon-hover, $bell-icon, $coin-icon, $fire-icon, $heart-icon, $more-icon-hover, $more-icon, $placemark-icon, $search-icon-hover, $search-icon, );
+$spritesheet: (22px, 165px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
