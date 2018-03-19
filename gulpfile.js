@@ -21,7 +21,7 @@ const webpackConfig = require('./webpack.config');
 const paths = {
   root: 'build',
   pug: {
-    src: 'src/pug/**/*.pug',
+    src: 'src/pug/pages/*.pug',
     dest: 'build'
   },
   scss: {
